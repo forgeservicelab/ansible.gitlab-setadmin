@@ -11,6 +11,6 @@ Prerequisites
 ### The inventory file
 This playbook targets all machines so it is **highly advised** to create a custom inventory file for this playbook and run as:
 
-    $ ansible-playbook -i inventory gitlab.yml 
+    $ ansible-playbook -i inventory setadmin.yml 
 
 The required accounts are specified as a YAML list on the one existing task.
