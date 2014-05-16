@@ -1,0 +1,8 @@
+---
+- hosts: all
+  sudo: true
+  sudo_user: git
+  tasks:
+    - name: Set administrators
+      command: psql -d gitlabhq_production -c "update users set admin = true where username = '{{ item }}'"
+      with_items: []
